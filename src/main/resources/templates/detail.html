@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Můj blog</title>
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/normalize.css" th:href="@{/css/normalize.css}">
+    <link rel="stylesheet" href="/css/skeleton.css" th:href="@{/css/skeleton.css}">
+    <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}">
+    <link rel="icon" type="image/png" href="/images/favicon.png" th:href="@{/images/favicon.png}">
+
+</head>
+<body>
+<div th:each="post, iterStat : ${post}">
+    <h1 th:utext="${post.title}">Tohle je detail příspěvku</h1>
+
+    <div th:each="post, iterStat : ${post}"> </div>
+    <span>Autor: </span><span th:utext="${post.author}">Autor: </span>
+    <div></div>
+    <span>Publikováno dne:</span><span th:utext="${#temporals.format(post.published, 'd. MMMM yyyy')}">01.01.2021</span>
+
+
+    <div style="margin-bottom: 20px; margin-top: 10px" th:utext="${post.body}">body</div>
+</div>
+<div> <a th:href="@{/}" class="button">zpět</a> </div>
+</body>
+</html>
+

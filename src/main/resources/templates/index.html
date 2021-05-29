@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Můj blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/normalize.css" th:href="@{/css/normalize.css}">
+    <link rel="stylesheet" href="/css/skeleton.css" th:href="@{/css/skeleton.css}">
+    <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}">
+    <link rel="icon" type="image/png" href="/images/favicon.png" th:href="@{/images/favicon.png}">
 </head>
 <body>
-    <h1>Tady bude můj blog…</h1>
+<h1>Tohle je můj blog o všedních věcech</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Titulek</th>
+        <th>Autor</th>
+        <th>Perex</th>
+        <th>Datum publikování</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="post, iterStat : ${post}">
+        <td th:utext="${post.title}">Titulek</td>
+        <td th:utext="${post.author}">Autor</td>
+        <td th:utext="${post.perex}">Perex</td>
+        <td th:utext="${#temporals.format(post.published, 'd. MMMM yyyy')}">01.01.2021</td>
+        <td>
+            <a th:href="@{/post/{slug}(slug=${post.slug})}" class="button">přečti</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>
